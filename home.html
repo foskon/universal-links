@@ -3,15 +3,25 @@
 <head>
 
 <script type="text/javascript">
-  function f1() {
+  function fCompassRedirect() {
     setTimeout(function(){
       window.location.href = 'https://dev-lab.covault.com/identities?ticket=df034686-6c23-49b0-b164-a631353cffad&appName=Dev StreamSite&cacheable=true&callback=https://streamsite-front-dev-lab.covault.com';
         }, 3000);
   }
 
-    function f2() {
-      window.location.href = 'https://dev-lab.covault.com/identities?ticket=df034686-6c23-49b0-b164-a631353cffad&appName=Dev StreamSite&cacheable=true&callback=https://streamsite-front-dev-lab.covault.com';
-    }
+  function fCompass() {
+    window.location.href = 'https://dev-lab.covault.com/identities?ticket=df034686-6c23-49b0-b164-a631353cffad&appName=Dev StreamSite&cacheable=true&callback=https://streamsite-front-dev-lab.covault.com';
+  }
+
+  function fSSRedirect() {
+    setTimeout(function(){
+      window.location.href = 'streamsite-dev:/identities';
+        }, 3000);
+  }
+
+  function fSS() {
+    window.location.href = 'streamsite-dev:/identities';
+  }
 
 </script> 
 
@@ -322,12 +332,11 @@ sup {
 
 <h2 id="toc_1">Link 1</h2>
 
-<p><img src="compass_logo.png" alt="iphone bordered" onclick="f1()"></p>
-<p><a onclick="f1()">Example Universal Link 1</a></p>
-<p><a onclick="f2()">Example Universal Link 2</a></p>
+<p><a onclick="fCompassRedirect()">BBVACompass Universal Link Timeout</a></p>
+<p><a onclick="fCompass()">BBVACompass Universal Link</a></p>
 
-<p><a href="https://foskon-uni-links-demo.herokuapp.com/link1.html">BBVA Compass Link 1</a></p>
+<p><a onclick="fSSRedirect()">StreamSite Universal Link Timeout</a></p>
+<p><a onclick="fSS()">StreamSite Universal Link</a></p>
 
 </body>
-
 </html>
